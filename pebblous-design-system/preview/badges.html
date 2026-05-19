@@ -1,0 +1,29 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Badges & Chips</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+html,body{margin:0;background:var(--pb-bg-elevated);font-family:var(--pb-font-sans)}
+.wrap{padding:22px;display:flex;flex-direction:column;gap:12px}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.lab{font-size:11px;color:var(--pb-fg-muted);font-family:var(--pb-font-mono);width:64px}
+.bdg{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:600;padding:3px 9px;border-radius:6px;line-height:1.5}
+.dot{width:6px;height:6px;border-radius:50%;background:currentColor}
+.chip{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;font-size:13px;font-weight:500;border-radius:999px;background:#F4F4F5;color:#46474C;border:1px solid transparent;cursor:pointer}
+.chip.act{background:#FFF0E6;color:#C64900;border-color:#F86825}
+</style></head><body><div class="wrap">
+<div class="row"><div class="lab">badges</div>
+  <span class="bdg" style="background:#FFF0E6;color:#C64900"><span class="dot"></span>New</span>
+  <span class="bdg" style="background:#F2FFF6;color:#32AC62"><span class="dot"></span>Success</span>
+  <span class="bdg" style="background:#FFF3D9;color:#DDA200"><span class="dot"></span>Pending</span>
+  <span class="bdg" style="background:#FCF4F3;color:#CF1D21"><span class="dot"></span>Error</span>
+  <span class="bdg" style="background:#E7F1FC;color:#0066FF"><span class="dot"></span>Info</span>
+  <span class="bdg" style="background:#171719;color:#fff">Beta</span>
+</div>
+<div class="row"><div class="lab">chips</div>
+  <span class="chip act">전체</span>
+  <span class="chip">Diagnosis Report</span>
+  <span class="chip">시뮬레이션</span>
+  <span class="chip">라벨링</span>
+  <span class="chip">연구</span>
+</div>
+</div></body></html>

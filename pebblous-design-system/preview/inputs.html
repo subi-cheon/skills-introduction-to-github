@@ -1,0 +1,21 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Inputs</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+html,body{margin:0;background:var(--pb-bg-elevated);font-family:var(--pb-font-sans)}
+.wrap{padding:24px;display:flex;flex-direction:column;gap:14px}
+.field{display:flex;flex-direction:column;gap:6px}
+.lab{font-size:13px;font-weight:500;color:var(--pb-fg)}
+.inp{height:44px;padding:0 14px;border-radius:10px;border:1px solid #DBDCDF;background:#fff;font-size:15px;font-family:inherit;color:var(--pb-fg);outline:none;transition:all .15s}
+.inp:focus{border-color:#F86825;box-shadow:0 0 0 3px rgba(248,104,37,0.15)}
+.inp.err{border-color:#E53935;box-shadow:0 0 0 3px rgba(229,57,53,0.12)}
+.hint{font-size:12px;color:var(--pb-fg-muted)}
+.hint.err{color:#CF1D21}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+</style></head><body><div class="wrap">
+<div class="row">
+  <div class="field"><div class="lab">이름</div><input class="inp" placeholder="홍길동"></div>
+  <div class="field"><div class="lab">이메일 · focused</div><input class="inp" value="contact@pebblous.ai" style="border-color:#F86825;box-shadow:0 0 0 3px rgba(248,104,37,0.15)"></div>
+</div>
+<div class="field"><div class="lab">전화번호</div><input class="inp err" value="044-589-3"><div class="hint err">11자리 숫자를 입력해주세요.</div></div>
+</div></body></html>

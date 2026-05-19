@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><title>Color · Semantic</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0;background:var(--pb-bg-elevated);font-family:var(--pb-font-sans)}
+  .wrap{padding:24px;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+  .card{border:1px solid var(--pb-border);border-radius:14px;overflow:hidden}
+  .bar{height:56px}
+  .body{padding:10px 12px;display:flex;flex-direction:column;gap:2px;background:var(--pb-bg-elevated)}
+  .name{font-size:13px;font-weight:700;color:var(--pb-fg)}
+  .hex{font-size:11px;color:var(--pb-fg-muted);font-family:var(--pb-font-mono)}
+  .chips{display:flex;gap:3px;padding:8px 12px;background:var(--pb-bg-muted)}
+  .ch{flex:1;height:22px;border-radius:4px}
+</style></head>
+<body><div class="wrap">
+  <div class="card">
+    <div class="bar" style="background:#51C57A"></div>
+    <div class="body"><div class="name">Success · Pebblous Green</div><div class="hex">pgreen-50 · #51C57A</div></div>
+    <div class="chips"><div class="ch" style="background:#F2FFF6"></div><div class="ch" style="background:#BFEFCF"></div><div class="ch" style="background:#74D195"></div><div class="ch" style="background:#32AC62"></div></div>
+  </div>
+  <div class="card">
+    <div class="bar" style="background:#E53935"></div>
+    <div class="body"><div class="name">Danger · Red</div><div class="hex">red-60 · #E53935</div></div>
+    <div class="chips"><div class="ch" style="background:#FCF4F3"></div><div class="ch" style="background:#FADBDB"></div><div class="ch" style="background:#EA615D"></div><div class="ch" style="background:#CF1D21"></div></div>
+  </div>
+  <div class="card">
+    <div class="bar" style="background:#FFC23F"></div>
+    <div class="body"><div class="name">Warning · Yellow</div><div class="hex">yellow-60 · #FFC23F</div></div>
+    <div class="chips"><div class="ch" style="background:#FFF3D9"></div><div class="ch" style="background:#FFE6B9"></div><div class="ch" style="background:#FFDA8C"></div><div class="ch" style="background:#DDA200"></div></div>
+  </div>
+  <div class="card">
+    <div class="bar" style="background:#0066FF"></div>
+    <div class="body"><div class="name">Info · Blue</div><div class="hex">blue-40 · #0066FF</div></div>
+    <div class="chips"><div class="ch" style="background:#E7F1FC"></div><div class="ch" style="background:#BED9F8"></div><div class="ch" style="background:#78AFF0"></div><div class="ch" style="background:#002953"></div></div>
+  </div>
+</div></body></html>

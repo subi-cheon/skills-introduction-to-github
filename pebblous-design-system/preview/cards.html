@@ -1,0 +1,23 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Cards</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+html,body{margin:0;background:#F4F4F5;font-family:var(--pb-font-sans);color:var(--pb-fg)}
+.wrap{padding:22px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.card{background:#fff;border-radius:20px;padding:18px;display:flex;flex-direction:column;gap:10px}
+.card.flat{box-shadow:none;border:1px solid var(--pb-border)}
+.card.soft{box-shadow:0 2px 8px rgba(0,0,0,0.04),0 1px 2px rgba(0,0,0,0.03)}
+.card.dark{background:#171719;color:#fff}
+.card.accent{background:linear-gradient(180deg,#FFF0E6 0%,#fff 100%);border:1px solid #FFC6B1}
+.t{font-size:15px;font-weight:700}
+.s{font-size:12px;color:var(--pb-fg-muted)}
+.dark .s{color:rgba(255,255,255,.6)}
+.meta{display:flex;justify-content:space-between;align-items:baseline}
+.n{font-family:'TT Firs Neue';font-weight:700;font-size:32px;line-height:1}
+.dark .n{color:#F86825}
+</style></head><body><div class="wrap">
+<div class="card flat"><div class="meta"><div class="t">Diagnosis Report</div><span style="font-size:11px;color:#32AC62;font-weight:700">+12%</span></div><div class="n">1,284</div><div class="s">이번 달 발행 건수</div></div>
+<div class="card soft"><div class="t">PebbloScope</div><div class="n" style="color:#F86825">57.2k</div><div class="s">어노테이션된 인스턴스</div></div>
+<div class="card dark"><div class="t" style="color:#fff">PebbloSim</div><div class="n">Online</div><div class="s">시뮬레이션 서버 상태</div></div>
+<div class="card accent"><div class="t">Pebblous Green</div><div class="n">51C57A</div><div class="s">신규 성공 토큰이 도입되었습니다.</div></div>
+</div></body></html>

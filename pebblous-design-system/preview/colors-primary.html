@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><title>Color · Primary</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0;background:var(--pb-bg-elevated);font-family:var(--pb-font-sans);}
+  .wrap{padding:24px;display:flex;flex-direction:column;gap:16px}
+  .row{display:grid;grid-template-columns:repeat(7,1fr);gap:8px}
+  .sw{aspect-ratio:1/1;border-radius:12px;border:1px solid var(--pb-border);position:relative;overflow:hidden}
+  .sw .lbl{position:absolute;left:8px;bottom:6px;font-size:11px;font-weight:700;letter-spacing:0.03em}
+  .hero{display:flex;gap:12px;align-items:center}
+  .hero .chip{width:108px;height:108px;border-radius:18px;background:var(--pb-primary);box-shadow:var(--pb-shadow-2)}
+  .hero .meta{display:flex;flex-direction:column;gap:2px}
+  .hero .name{font-size:22px;font-weight:700;letter-spacing:-0.02em}
+  .hero .hex{font-family:var(--pb-font-mono);font-size:13px;color:var(--pb-fg-muted)}
+  .note{font-size:12px;color:var(--pb-fg-muted)}
+</style></head>
+<body><div class="wrap">
+  <div class="hero">
+    <div class="chip"></div>
+    <div class="meta">
+      <div class="name">Pebblous Orange</div>
+      <div class="hex">orange-50 · #F86825 · C0 M75 Y85 K0</div>
+      <div class="note">기본 브랜드 색상 — primary CTAs, brand accents, selection</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="sw" style="background:#FFF0E6;color:#923401"><span class="lbl">95</span></div>
+    <div class="sw" style="background:#FFDCCF;color:#923401"><span class="lbl">90</span></div>
+    <div class="sw" style="background:#FFC6B1;color:#923401"><span class="lbl">80</span></div>
+    <div class="sw" style="background:#FFB092;color:#923401"><span class="lbl">70</span></div>
+    <div class="sw" style="background:#FF9267;color:#fff"><span class="lbl">60</span></div>
+    <div class="sw" style="background:#F86825;color:#fff;outline:2px solid #F86825;outline-offset:-2px"><span class="lbl">50 ★</span></div>
+    <div class="sw" style="background:#C64900;color:#fff"><span class="lbl">40</span></div>
+  </div>
+</div></body></html>
