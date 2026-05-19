@@ -1,0 +1,23 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Buttons · Outlined/Ghost</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+html,body{margin:0;background:var(--pb-bg-elevated);font-family:var(--pb-font-sans)}
+.wrap{padding:24px;display:flex;flex-direction:column;gap:12px}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.lab{font-size:11px;color:var(--pb-fg-muted);font-family:var(--pb-font-mono);width:72px}
+.btn{font-family:var(--pb-font-sans);font-weight:600;cursor:pointer;display:inline-flex;align-items:center;gap:6px;height:40px;padding:0 16px;font-size:14px;border-radius:10px;background:#fff;transition:all .15s}
+.out{border:1px solid #DBDCDF;color:#171719}
+.out:hover{background:#F4F4F5;border-color:#AEB0B6}
+.out-pri{border:1px solid #F86825;color:#F86825;background:#fff}
+.out-pri:hover{background:#FFF0E6}
+.ghost{background:transparent;border:0;color:#171719}
+.ghost:hover{background:rgba(112,115,124,0.08)}
+.ghost-pri{background:transparent;border:0;color:#F86825}
+.ghost-pri:hover{background:#FFF0E6}
+.txt{background:transparent;border:0;color:#F86825;font-weight:600;padding:0;height:auto;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1.5px}
+</style></head><body><div class="wrap">
+<div class="row"><div class="lab">outlined</div><button class="btn out">Secondary</button><button class="btn out-pri">Primary outlined</button></div>
+<div class="row"><div class="lab">ghost</div><button class="btn ghost">Ghost neutral</button><button class="btn ghost-pri">Ghost orange</button></div>
+<div class="row"><div class="lab">text link</div><button class="txt">자세히 보기 →</button><button class="txt" style="color:#171719">View more →</button></div>
+</div></body></html>

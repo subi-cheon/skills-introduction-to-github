@@ -1,0 +1,332 @@
+/* =========================================================
+   Pebblous Design System — Foundations
+   Tokens extracted from the official Figma file.
+   Primary brand: Orange #F86825 (Pebblous Orange 50)
+   ========================================================= */
+
+/* ---------- Fonts ---------- */
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("./fonts/Pretendard-Thin.otf") format("opentype");
+  font-weight: 100; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url("./fonts/Pretendard-ExtraLight.otf") format("opentype");
+  font-weight: 200; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url("./fonts/Pretendard-Light.otf") format("opentype");
+  font-weight: 300; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url("./fonts/Pretendard-Regular.otf") format("opentype");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url("./fonts/Pretendard-Medium.otf") format("opentype");
+  font-weight: 500; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url("./fonts/Pretendard-SemiBold.otf") format("opentype");
+  font-weight: 600; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url("./fonts/Pretendard-Bold.otf") format("opentype");
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url("./fonts/Pretendard-ExtraBold.otf") format("opentype");
+  font-weight: 800; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url("./fonts/Pretendard-Black.otf") format("opentype");
+  font-weight: 900; font-style: normal; font-display: swap;
+}
+
+@font-face {
+  font-family: "TT Firs Neue";
+  src: url("./fonts/TT-Firs-Neue-Variable.otf") format("opentype-variations"),
+       url("./fonts/TT-Firs-Neue-Variable.otf") format("opentype");
+  font-weight: 100 900; font-style: normal; font-display: swap;
+}
+
+:root {
+  /* ----- Color : Atomic · Common ----- */
+  --pb-common-100: #FFFFFF;
+  --pb-common-0:   #000000;
+
+  /* ----- Color : Atomic · Neutral ----- */
+  --pb-neutral-95: #F9F9F9;
+  --pb-neutral-93: #F7F7F7;
+  --pb-neutral-90: #F5F5F5;
+  --pb-neutral-80: #DCDCDC;
+  --pb-neutral-70: #DDDDDD;
+  --pb-neutral-60: #BDBDBD;
+  --pb-neutral-50: #808080;
+  --pb-neutral-40: #737373;
+  --pb-neutral-30: #585858;
+  --pb-neutral-20: #474747;
+  --pb-neutral-15: #333333;
+  --pb-neutral-10: #222222;
+  --pb-neutral-5:  #0F0F0F;
+  --pb-neutral-0:  #000000;
+
+  /* ----- Color : Atomic · Cool Neutral (semantic surfaces + text) ----- */
+  --pb-coolneutral-99: #F7F7F8;
+  --pb-coolneutral-98: #F4F4F5;
+  --pb-coolneutral-97: #EAEBEC;
+  --pb-coolneutral-95: #DBDCDF;
+  --pb-coolneutral-90: #C2C4C8;
+  --pb-coolneutral-80: #AEB0B6;
+  --pb-coolneutral-70: #989BA2;
+  --pb-coolneutral-60: #878A93;
+  --pb-coolneutral-50: #70737C;
+  --pb-coolneutral-40: #5A5C63;
+  --pb-coolneutral-30: #46474C;
+  --pb-coolneutral-22: #2E2F33;
+  --pb-coolneutral-20: #292A2D;
+  --pb-coolneutral-17: #212225;
+  --pb-coolneutral-15: #1B1C1E;
+  --pb-coolneutral-10: #171719;
+  --pb-coolneutral-5:  #0F0F10;
+  --pb-coolneutral-0:  #000000;
+
+  /* ----- Color : Atomic · Orange (brand primary) ----- */
+  --pb-orange-99: #FFF9F5;
+  --pb-orange-95: #FFF0E6;
+  --pb-orange-90: #FFDCCF;
+  --pb-orange-80: #FFC6B1;
+  --pb-orange-70: #FFB092;
+  --pb-orange-60: #FF9267;
+  --pb-orange-55: #FF7C45;
+  --pb-orange-50: #F86825; /* Pebblous Orange — primary brand color */
+  --pb-orange-40: #C64900;
+  --pb-orange-30: #923401;
+  --pb-orange-20: #431400;
+  --pb-orange-10: #140300;
+  --pb-orange-0:  #000000;
+
+  /* ----- Color : Atomic · Yellow ----- */
+  --pb-yellow-99: #FFF3D9;
+  --pb-yellow-90: #FFE6B9;
+  --pb-yellow-85: #FFDA8C;
+  --pb-yellow-80: #FFCE65;
+  --pb-yellow-60: #FFC23F;
+  --pb-yellow-40: #DDA200;
+
+  /* ----- Color : Atomic · Red Pink ----- */
+  --pb-redpink-99: #FEF7F8;
+  --pb-redpink-95: #FCDDE1;
+  --pb-redpink-90: #F79AA5;
+  --pb-redpink-70: #F36B7C;
+  --pb-redpink-60: #F1576A;
+  --pb-redpink-50: #DB4259;
+
+  /* ----- Color : Atomic · Red (destructive / error) ----- */
+  --pb-red-99: #FCF4F3;
+  --pb-red-95: #FADBDB;
+  --pb-red-90: #F5B4B2;
+  --pb-red-80: #EF8482;
+  --pb-red-70: #EA615D;
+  --pb-red-60: #E53935;
+  --pb-red-50: #CF1D21;
+  --pb-red-40: #C00214;
+
+  /* ----- Color : Atomic · Green ----- */
+  --pb-green-99: #E4FFCF;
+  --pb-green-90: #D1FFAA;
+  --pb-green-80: #B8F77F;
+  --pb-green-60: #A5E26B;
+  --pb-green-50: #8CC850;
+  --pb-green-40: #74AE33;
+  --pb-green-30: #578856;
+  --pb-green-20: #366351;
+  --pb-green-10: #1F4D3C;
+  --pb-green-0:  #003223;
+
+  /* ----- Color : Atomic · Pebblous Green (success) ----- */
+  --pb-pgreen-99: #F2FFF6;
+  --pb-pgreen-90: #BFEFCF;
+  --pb-pgreen-80: #66D98C;
+  --pb-pgreen-70: #74D195;
+  --pb-pgreen-50: #51C57A;  /* success */
+  --pb-pgreen-40: #32AC62;
+
+  /* ----- Color : Atomic · Blue (informational) ----- */
+  --pb-blue-99: #E7F1FC;
+  --pb-blue-90: #BED9F8;
+  --pb-blue-80: #98C2F4;
+  --pb-blue-60: #78AFF0;
+  --pb-blue-50: #6096D5;
+  --pb-blue-40: #0066FF;
+  --pb-blue-10: #002953;
+
+  /* ----- Color : Atomic · Violet (secondary accent) ----- */
+  --pb-violet-99: #E9E4FC;
+  --pb-violet-90: #CDC2F8;
+  --pb-violet-80: #B1A1F5;
+  --pb-violet-70: #A390F3;
+  --pb-violet-60: #8F78F0;
+  --pb-violet-50: #775FD5;
+  --pb-violet-40: #6541F2;   /* Primary violet */
+  --pb-violet-accent: #9747FF;
+
+  /* =======================================================
+     SEMANTIC TOKENS — map to atomic
+     ======================================================= */
+
+  /* Surfaces / backgrounds */
+  --pb-bg:          var(--pb-coolneutral-99);    /* app background */
+  --pb-bg-elevated: var(--pb-common-100);        /* card / paper */
+  --pb-bg-muted:    var(--pb-coolneutral-97);    /* subtle chips, dividers */
+  --pb-bg-inverse:  var(--pb-coolneutral-10);    /* dark surface */
+
+  /* Foreground text */
+  --pb-fg:            var(--pb-coolneutral-10);  /* primary text #171719 */
+  --pb-fg-2:          var(--pb-coolneutral-22);  /* secondary text */
+  --pb-fg-muted:      var(--pb-coolneutral-50);  /* tertiary / captions */
+  --pb-fg-disabled:   var(--pb-coolneutral-70);
+  --pb-fg-inverse:    var(--pb-common-100);
+
+  /* Borders */
+  --pb-border:        rgba(112,115,124,0.22);
+  --pb-border-strong: rgba(112,115,124,0.52);
+  --pb-border-subtle: rgba(112,115,124,0.08);
+  --pb-divider:       var(--pb-coolneutral-97);
+
+  /* Interaction states */
+  --pb-interact-inactive: var(--pb-coolneutral-70);
+  --pb-interact-hover:    rgba(112,115,124,0.08);
+  --pb-interact-pressed:  rgba(112,115,124,0.16);
+  --pb-interact-selected: rgba(248,104,37,0.10);
+
+  /* Brand / accent — production-aligned with dataclinic-web src/theme/palette.ts */
+  --pb-primary:         #F86825;
+  --pb-primary-light:   #FF9B6A;
+  --pb-primary-dark:    #F86825;
+  --pb-primary-darker:  #7F3714;
+  --pb-primary-lighter: #FFF9F5;
+  --pb-primary-soft:    #FFF0E6;
+  --pb-on-primary:      #FFFFFF;
+
+  /* Production-aligned greys (MUI Minimal base) */
+  --pb-grey-100: #F9FAFB;
+  --pb-grey-200: #F4F6F8;
+  --pb-grey-300: #DFE3E8;
+  --pb-grey-400: #C4CDD5;
+  --pb-grey-500: #808080;
+  --pb-grey-600: #637381;
+  --pb-grey-700: #585858;   /* body text */
+  --pb-grey-800: #212B36;
+  --pb-grey-900: #161C24;
+
+  /* Status — production values */
+  --pb-success:      #78AFF0;   /* NB: production uses blue for success.main */
+  --pb-success-dark: #118D57;
+  --pb-success-soft: #D3FCD2;
+  --pb-warning:      #FFC23F;
+  --pb-warning-soft: #FFF5CC;
+  --pb-danger:       #F1576A;
+  --pb-danger-soft:  #FFE9D5;
+  --pb-info:         #00B8D9;
+  --pb-info-soft:    #CAFDF5;
+
+  /* Shadows (observed on cards in figma: black a=.03 / .04 / .08 / .12) */
+  --pb-shadow-1: 0 1px 2px rgba(0,0,0,0.04);
+  --pb-shadow-2: 0 2px 8px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.03);
+  --pb-shadow-3: 0 8px 24px rgba(0,0,0,0.08), 0 2px 6px rgba(0,0,0,0.04);
+  --pb-shadow-4: 0 16px 48px rgba(0,0,0,0.12), 0 4px 12px rgba(0,0,0,0.04);
+
+  /* Corner radii (pulled from figma: 4, 8, 12, 16, 24, 32, 64) */
+  --pb-radius-xs: 4px;
+  --pb-radius-sm: 8px;
+  --pb-radius-md: 12px;
+  --pb-radius-lg: 16px;
+  --pb-radius-xl: 24px;
+  --pb-radius-2xl: 32px;
+  --pb-radius-3xl: 64px;
+  --pb-radius-full: 9999px;
+
+  /* Spacing — 4px base scale (observed gaps 4, 8, 12, 16, 24, 32, 48, 64) */
+  --pb-space-1:  4px;
+  --pb-space-2:  8px;
+  --pb-space-3:  12px;
+  --pb-space-4:  16px;
+  --pb-space-5:  20px;
+  --pb-space-6:  24px;
+  --pb-space-8:  32px;
+  --pb-space-10: 40px;
+  --pb-space-12: 48px;
+  --pb-space-16: 64px;
+  --pb-space-20: 80px;
+
+  /* ======================================================
+     TYPOGRAPHY
+     Primary family: Pretendard (Korean + Latin)
+     Display / English accent: TT Firs Neue
+     ====================================================== */
+  --pb-font-sans:    "Pretendard Variable", "Pretendard", "Pretendard JP", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --pb-font-display: "TT Firs Neue", "Pretendard", -apple-system, BlinkMacSystemFont, sans-serif;
+  --pb-font-mono:    ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  /* Type scale tokens — sizes observed in the figma */
+  --pb-display-2xl-size:  64px;   --pb-display-2xl-lh: 1.20;   --pb-display-2xl-ls: -0.017em;
+  --pb-display-xl-size:   56px;   --pb-display-xl-lh: 1.20;    --pb-display-xl-ls: -0.02em;
+  --pb-display-lg-size:   40px;   --pb-display-lg-lh: 1.20;    --pb-display-lg-ls: -0.02em;
+  --pb-h1-size:           36px;   --pb-h1-lh: 1.334;           --pb-h1-ls: -0.027em;
+  --pb-h2-size:           28px;   --pb-h2-lh: 1.35;            --pb-h2-ls: -0.025em;
+  --pb-h3-size:           24px;   --pb-h3-lh: 1.334;           --pb-h3-ls: -0.023em;
+  --pb-h4-size:           18px;   --pb-h4-lh: 1.45;            --pb-h4-ls: -0.015em;
+  --pb-title-size:        17px;   --pb-title-lh: 1.412;        --pb-title-ls: 0;
+  --pb-body-size:         16px;   --pb-body-lh: 1.50;          --pb-body-ls: 0.006em;
+  --pb-body-sm-size:      14px;   --pb-body-sm-lh: 1.43;       --pb-body-sm-ls: 0.006em;
+  --pb-label-size:        13px;   --pb-label-lh: 1.385;        --pb-label-ls: 0.019em;
+  --pb-caption-size:      12px;   --pb-caption-lh: 1.40;       --pb-caption-ls: 0.02em;
+  --pb-micro-size:        11px;   --pb-micro-lh: 1.273;        --pb-micro-ls: 0.031em;
+}
+
+/* =========================================================
+   TYPOGRAPHY UTILITY CLASSES
+   Usage: <h1 class="pb-h1">...</h1>  or apply .pb-body etc.
+   Each token maps 1:1 to a figma text style.
+   ========================================================= */
+
+.pb-display-2xl {
+  font-family: var(--pb-font-sans);
+  font-weight: 700;
+  font-size: var(--pb-display-2xl-size);
+  line-height: var(--pb-display-2xl-lh);
+  letter-spacing: var(--pb-display-2xl-ls);
+  color: var(--pb-fg);
+}
+.pb-display-xl  { font-family: var(--pb-font-sans);    font-weight: 700; font-size: var(--pb-display-xl-size);  line-height: var(--pb-display-xl-lh);  letter-spacing: var(--pb-display-xl-ls);  color: var(--pb-fg); }
+.pb-display-lg  { font-family: var(--pb-font-display); font-weight: 700; font-size: var(--pb-display-lg-size);  line-height: var(--pb-display-lg-lh);  letter-spacing: var(--pb-display-lg-ls);  color: var(--pb-fg); }
+.pb-h1, h1.pb   { font-family: var(--pb-font-sans);    font-weight: 700; font-size: var(--pb-h1-size);          line-height: var(--pb-h1-lh);          letter-spacing: var(--pb-h1-ls);          color: var(--pb-fg); }
+.pb-h2, h2.pb   { font-family: var(--pb-font-sans);    font-weight: 700; font-size: var(--pb-h2-size);          line-height: var(--pb-h2-lh);          letter-spacing: var(--pb-h2-ls);          color: var(--pb-fg); }
+.pb-h3, h3.pb   { font-family: var(--pb-font-sans);    font-weight: 700; font-size: var(--pb-h3-size);          line-height: var(--pb-h3-lh);          letter-spacing: var(--pb-h3-ls);          color: var(--pb-fg); }
+.pb-h4, h4.pb   { font-family: var(--pb-font-sans);    font-weight: 600; font-size: var(--pb-h4-size);          line-height: var(--pb-h4-lh);          letter-spacing: var(--pb-h4-ls);          color: var(--pb-fg); }
+.pb-title       { font-family: var(--pb-font-sans);    font-weight: 700; font-size: var(--pb-title-size);       line-height: var(--pb-title-lh);       color: var(--pb-fg); }
+.pb-body        { font-family: var(--pb-font-sans);    font-weight: 500; font-size: var(--pb-body-size);        line-height: var(--pb-body-lh);        letter-spacing: var(--pb-body-ls);        color: var(--pb-fg); }
+.pb-body-strong { font-family: var(--pb-font-sans);    font-weight: 600; font-size: var(--pb-body-size);        line-height: var(--pb-body-lh);        letter-spacing: var(--pb-body-ls);        color: var(--pb-fg); }
+.pb-body-sm     { font-family: var(--pb-font-sans);    font-weight: 500; font-size: var(--pb-body-sm-size);     line-height: var(--pb-body-sm-lh);     letter-spacing: var(--pb-body-sm-ls);     color: var(--pb-fg); }
+.pb-label       { font-family: var(--pb-font-sans);    font-weight: 500; font-size: var(--pb-label-size);       line-height: var(--pb-label-lh);       letter-spacing: var(--pb-label-ls);       color: var(--pb-fg-2); }
+.pb-caption     { font-family: var(--pb-font-sans);    font-weight: 500; font-size: var(--pb-caption-size);     line-height: var(--pb-caption-lh);     letter-spacing: var(--pb-caption-ls);     color: var(--pb-fg-muted); }
+.pb-micro       { font-family: var(--pb-font-sans);    font-weight: 700; font-size: var(--pb-micro-size);       line-height: var(--pb-micro-lh);       letter-spacing: var(--pb-micro-ls);       color: var(--pb-fg-2); text-transform: uppercase; }
+
+/* Small reset so the tokens render consistently out of the box */
+.pb-root, .pb {
+  font-family: var(--pb-font-sans);
+  color: var(--pb-fg);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "ss01", "ss02", "calt";
+}

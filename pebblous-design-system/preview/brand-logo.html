@@ -1,0 +1,22 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Brand · Logo</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+html,body{margin:0;background:var(--pb-bg-elevated);font-family:var(--pb-font-sans)}
+.wrap{padding:24px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.cell{border:1px solid var(--pb-border);border-radius:14px;padding:28px;display:flex;flex-direction:column;gap:14px;align-items:flex-start;justify-content:center;min-height:150px}
+.cell.dark{background:#171719;color:#fff}
+.cell.orange{background:#F86825;color:#fff}
+.logo{height:32px;display:block}
+/* Use CSS filters to recolor the black currentColor SVG */
+.logo.orange{filter:invert(53%) sepia(79%) saturate(3008%) hue-rotate(354deg) brightness(100%) contrast(96%)}
+.logo.white{filter:invert(100%)}
+.logo.black{filter:none}
+.note{font-size:12px;color:var(--pb-fg-muted)}
+.dark .note,.orange .note{color:rgba(255,255,255,0.75)}
+</style></head><body><div class="wrap">
+<div class="cell"><img class="logo orange" src="../assets/logos/pebblous-wordmark.svg" alt="Pebblous"><div class="note">Primary · orange on light</div></div>
+<div class="cell dark"><img class="logo white" src="../assets/logos/pebblous-wordmark.svg" alt="Pebblous"><div class="note">Reverse · white on black</div></div>
+<div class="cell"><img class="logo black" src="../assets/logos/pebblous-wordmark.svg" alt="Pebblous"><div class="note">Mono · black on light</div></div>
+<div class="cell orange"><img class="logo white" src="../assets/logos/pebblous-wordmark.svg" alt="Pebblous"><div class="note">Brand solid · white on orange</div></div>
+</div></body></html>

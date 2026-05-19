@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><title>Typography · Families</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0;background:var(--pb-bg-elevated);font-family:var(--pb-font-sans);color:var(--pb-fg)}
+  .wrap{padding:28px;display:flex;flex-direction:column;gap:18px}
+  .family{display:flex;flex-direction:column;gap:6px}
+  .meta{display:flex;gap:10px;align-items:baseline}
+  .name{font-size:14px;font-weight:700}
+  .role{font-size:12px;color:var(--pb-fg-muted)}
+  .sample{font-size:44px;line-height:1.1;letter-spacing:-0.02em}
+  .weights{display:flex;gap:18px;font-size:16px;color:var(--pb-fg-2);flex-wrap:wrap}
+</style></head>
+<body><div class="wrap">
+  <div class="family">
+    <div class="meta"><div class="name">Pretendard</div><div class="role">Primary · Korean + Latin, all UI & body copy</div></div>
+    <div class="sample" style="font-family:Pretendard">Pebblous 프리텐다드</div>
+    <div class="weights" style="font-family:Pretendard">
+      <span style="font-weight:300">Light</span>
+      <span style="font-weight:400">Regular</span>
+      <span style="font-weight:500">Medium</span>
+      <span style="font-weight:600">Semibold</span>
+      <span style="font-weight:700">Bold</span>
+      <span style="font-weight:900">Black</span>
+    </div>
+  </div>
+  <div class="family">
+    <div class="meta"><div class="name">TT Firs Neue</div><div class="role">Display · English-only accents, logos, hero numerals</div></div>
+    <div class="sample" style="font-family:'TT Firs Neue';font-weight:700">TT Firs Neue — Pebblous</div>
+    <div class="weights" style="font-family:'TT Firs Neue'">
+      <span style="font-weight:400">Regular</span>
+      <span style="font-weight:500">Medium</span>
+      <span style="font-weight:600">DemiBold</span>
+      <span style="font-weight:700">Bold</span>
+    </div>
+  </div>
+</div></body></html>

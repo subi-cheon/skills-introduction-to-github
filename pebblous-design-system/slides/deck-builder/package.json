@@ -1,0 +1,18 @@
+{
+  "name": "pebblous-deck-builder",
+  "version": "0.1.0",
+  "private": true,
+  "description": "오프라인 Pebblous 발표자료(.pptx) 빌더 — slides.md 명세 박제",
+  "main": "ppt-template.js",
+  "bin": {
+    "pebblous-build-deck": "./build-deck.js"
+  },
+  "scripts": {
+    "build": "node build-deck.js",
+    "example": "node build-deck.js example.md"
+  },
+  "dependencies": {
+    "pptxgenjs": "^3.12.0",
+    "sharp": "^0.34.5"
+  }
+}

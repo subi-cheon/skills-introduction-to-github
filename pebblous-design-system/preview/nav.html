@@ -1,0 +1,24 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Nav / Header</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+html,body{margin:0;background:#F4F4F5;font-family:var(--pb-font-sans)}
+.wrap{padding:18px;display:flex;flex-direction:column;gap:14px}
+.hd{background:#171719;color:#fff;border-radius:12px;padding:12px 22px;display:flex;align-items:center;gap:20px;font-size:14px}
+.brand{height:20px;margin-right:auto}
+.brand.orange{filter:invert(53%) sepia(79%) saturate(3008%) hue-rotate(354deg) brightness(100%) contrast(96%)}
+.brand.black{filter:none}
+.nav a{color:rgba(255,255,255,.65);text-decoration:none;margin-right:18px;font-weight:500}
+.nav a.on{color:#fff}
+.cta{background:#F86825;color:#fff;font-weight:600;border:0;padding:8px 16px;border-radius:8px;cursor:pointer;font-size:13px}
+.hd.light{background:#fff;color:#171719;border:1px solid var(--pb-border)}
+.hd.light .nav a{color:var(--pb-fg-muted)}
+.hd.light .nav a.on{color:#171719}
+.tabs{display:flex;gap:0;border-bottom:1px solid var(--pb-divider);background:#fff;padding:0 16px;border-radius:12px 12px 0 0}
+.tab{padding:12px 14px;font-size:14px;color:var(--pb-fg-muted);font-weight:500;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px}
+.tab.on{color:#171719;border-color:#F86825;font-weight:700}
+</style></head><body><div class="wrap">
+<div class="hd"><img class="brand orange" src="../assets/logos/pebblous-wordmark.svg" alt="Pebblous"><div class="nav"><a class="on">Product</a><a>Solution</a><a>Research</a><a>Company</a></div><button class="cta">문의하기</button></div>
+<div class="hd light"><img class="brand orange" src="../assets/logos/pebblous-wordmark.svg" alt="Pebblous"><div class="nav"><a class="on">진단</a><a>라벨링</a><a>시뮬레이션</a></div><button class="cta">시작하기</button></div>
+<div class="tabs"><div class="tab on">개요</div><div class="tab">데이터셋</div><div class="tab">클래스</div><div class="tab">리포트</div></div>
+</div></body></html>
